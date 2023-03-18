@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.09);
+    width: 146px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 13px;
+    width: 65px;
+}
+
+nav a:hover {
+    box-shadow: inset 0px -1px 0px #1890FF;
+    color: #1890FF;
+}
