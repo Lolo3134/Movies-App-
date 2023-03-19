@@ -4,19 +4,15 @@
     "es2021": true
   },
   "ignorePatterns": ["node_modules", "dist", "build"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
-  ],
   "parserOptions": {
     "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+      "es6": true,
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
   },
   "plugins": ["react", "prettier", "import"],
   "rules": {
