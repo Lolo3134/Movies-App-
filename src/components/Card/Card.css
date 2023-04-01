@@ -83,7 +83,7 @@ ul li {
     background: #FAFAFA;
     border: 1px solid #D9D9D9;
     border-radius: 2px;
-    padding: 0 5px;
+    padding: 2px 3px 3px 5px;
 }
 
 .card_description__stars ul li {
@@ -92,4 +92,24 @@ ul li {
 
 img {
     width: auto !important;
+    max-height: 279px !important;
+}
+
+@media screen and (max-width: 720px) {
+    .card {
+        display: flex;
+        max-width: 387px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .css-dev-only-do-not-override-mxhywb {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card_description__stars {
+        display: flex;
+        justify-content: right;
+    }
 }

@@ -52,7 +52,7 @@ const Cards = ({ item }) => {
   return (
     <Fragment>
       <li className="card">
-        <Image src={imgUrl} height="100%" />
+        <Image src={imgUrl} />
         <div className="card_description">
           <div className="card_description__wrapper">
             <div className="card_description--top-wrapper">
