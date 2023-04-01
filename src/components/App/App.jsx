@@ -33,7 +33,7 @@ function App() {
   }
 
   function showMovies(value, page = 1) {
-    if (value) {
+    if (!value) {
       setIsLoading(true);
       const popularData = getPopulapMovies(page);
       popularData
