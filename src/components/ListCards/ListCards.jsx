@@ -1,26 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Spin } from 'antd';
 
 import './ListCards.css';
-import Card from '../Card/Card';
-import ApiService from '../ApiService/ApiService';
+import Cards from '../Card/Card';
 
-const ListCards = () => {
-  const [items, setItems] = useState([]);
-
-  async function getMovies() {
-    const data = await ApiService.getPopularMovies(1);
-    setItems(data);
-  }
-
-  useEffect(() => {
-    getMovies();
-  }, []);
-
+const ListCards = ({ movies, isLoading }) => {
   return (
     <ul className="cards">
-      {items.map((item) => {
-        return <Card item={item} key={item.id} />;
-      })}
+      {isLoading ? (
+        <div className="loading">
+          <Spin tip="Loading" size="large" />
+        </div>
+      ) : (
+        movies.map((item) => {
+          return <Cards item={item} key={item.id} />;
+        })
+      )}
     </ul>
   );
 };

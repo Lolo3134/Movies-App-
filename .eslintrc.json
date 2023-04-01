@@ -5,10 +5,10 @@
   },
   "ignorePatterns": ["node_modules", "dist", "build"],
   "parserOptions": {
+    "sourceType": "module",
     "ecmaFeatures": {
       "es6": true,
       "ecmaVersion": 12,
-      "sourceType": "module",
       "ecmaFeatures": {
         "jsx": true
       }

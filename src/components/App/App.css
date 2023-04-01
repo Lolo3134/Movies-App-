@@ -21,8 +21,34 @@ body {
 }
 
 .wrapper {
-    margin: 0 215px;
+    margin: 0 200px;
     background: white;
     padding: 13px 36px 17px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .wrapper {
+        margin: 0 0;
+    }
 }
 
