@@ -1,1 +1,1 @@
-https://moviesapp-dw6arlno6-lolo3134.vercel.app/
+https://moviesapp-d8afx7mqz-lolo3134.vercel.app/

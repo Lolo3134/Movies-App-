@@ -104,8 +104,8 @@ img {
     }
 
     .css-dev-only-do-not-override-mxhywb {
-        display: flex;
-        justify-content: center;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .card_description__stars {
