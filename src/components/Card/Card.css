@@ -90,9 +90,10 @@ ul li {
     margin-inline-end: 3px !important;
 }
 
-img {
+.ant-image-img {
     width: auto !important;
-    max-height: 279px !important;
+    max-width: 183px !important;
+    height: 100% !important;
 }
 
 @media screen and (max-width: 720px) {

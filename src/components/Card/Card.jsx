@@ -38,7 +38,7 @@ const Cards = ({ item }) => {
   }, []);
 
   const imgUrl = `https://image.tmdb.org/t/p/w500//${item.poster_path}`;
-  const description = item.overview.replace(/^(.{150}[^\s]*).*/, '$1');
+  const description = item.overview.replace(/^(.{120}[^\s]*).*/, '$1');
   const formatDate = item.release_date
     ? format(new Date(item.release_date), 'MMMM dd, yyyy')
     : 'Дата выхода неизвестна';

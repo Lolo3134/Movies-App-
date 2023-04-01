@@ -33,7 +33,7 @@ function App() {
   }
 
   function showMovies(value, page = 1) {
-    if (!value) {
+    if (value === '') {
       setIsLoading(true);
       const popularData = getPopulapMovies(page);
       popularData
@@ -141,8 +141,8 @@ function App() {
         </header>
         <main>
           {isSearch && <FilterMovies onSearch={(query) => searchingMovies(query)} />}
-          {body}
           {errMsg}
+          {body}
         </main>
         <footer>
           <Paginations maxPage={totalPage} page={page} onChangePage={(page) => changePage(page)} />
